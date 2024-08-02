@@ -1,0 +1,22 @@
+﻿<Page x:Class="qawpf.QNA"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:qawpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="QNA">
+
+    <Grid Background="#FF0B1F44">
+
+        <Button x:Name="Q1" Content="국가 번호가 뭐예요?" HorizontalAlignment="Left" Height="59" Margin="10,10,0,0" VerticalAlignment="Top" Width="184" FontSize="14" FontWeight="Bold" Click="Q1_Click" Background="#FFEAF1F6"/>
+        <Button x:Name="Q2" Content="국가 코드가 뭐예요?" HorizontalAlignment="Left" Height="59" Margin="10,80,0,0" VerticalAlignment="Top" Width="184" FontSize="14" FontWeight="Bold" Click="Q2_Click" Background="#FFEAF1F6"/>
+        <Button x:Name="Q3" Content="여행경보제도가 뭐예요?" HorizontalAlignment="Left" Height="58" Margin="10,150,0,0" VerticalAlignment="Top" Width="184" FontSize="14" FontWeight="Bold" Grid.Row="1" Click="Q3_Click" Background="#FFEAF1F6"/>
+        <Button x:Name="Q4" Content="여행유의" HorizontalAlignment="Left" Height="58" Margin="10,220,0,0" VerticalAlignment="Top" Width="184" FontSize="14" FontWeight="Bold" Grid.Row="1" Click="Q4_Click" Background="#FFEAF1F6"/>
+        <Button x:Name="Q5" Content="여행자제" HorizontalAlignment="Left" Height="58" Margin="10,290,0,0" VerticalAlignment="Top" Width="184" FontSize="14" FontWeight="Bold" Grid.Row="1" Click="Q5_Click" Background="#FFEAF1F6"/>
+        <Button x:Name="Q6" Content="출국권고" HorizontalAlignment="Left" Height="58" Margin="10,360,0,0" VerticalAlignment="Top" Width="184" FontSize="14" FontWeight="Bold" Grid.Row="1" Click="Q6_Click" Background="#FFEAF1F6"/>
+        <TextBlock x:Name="answer" HorizontalAlignment="Left" Margin="231,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="376" Width="532" Background="#FF5F5F5F" Grid.RowSpan="2" Foreground="#FFDADADA"/>
+
+    </Grid>
+</Page>

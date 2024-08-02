@@ -1,0 +1,35 @@
+﻿<Window x:Class="qawpfCS.Direct_Chat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:qawpfCS"
+        mc:Ignorable="d"
+        Title="Direct_Chat" Height="450" Width="350">
+    <Grid Background="#FF1D2E4A">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="52"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="Chat_List"
+           Grid.ColumnSpan="2"
+           Margin="5,5,5,5"/>
+        <TextBox x:Name="chating"
+            Grid.Row="1"
+            Margin="5,5,5,5"
+            Text="Type your message here" KeyDown="chating_KeyDown"
+            />
+        <Button x:Name="Send_btn"
+           Grid.Row="1"
+           Grid.Column="1"
+           Margin="5,5,5,5"
+           Content="Send" Height="40"
+           VerticalAlignment="Top" Click="Send_btn_Click"
+           />
+
+    </Grid>
+</Window>
